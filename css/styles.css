@@ -72,27 +72,19 @@ font-size: 20px ;
     color: black !important;
 
 }
+.nav-item{
+    border: 1px solid black;
+    background-color: white;
 
+}
+.navbar-nav>li{
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav>li{
+      display: block !important
+   }
+}
 
 /* I need to make this use the grid system to responsively change based on screen size */
-@media all and (max-width: 1300px) {
-    .column {
-      width: 100%;
-      
-    }
-
-@media all and (min-width: 700px) {
-    #first {
-        width: 100%;
-        align-content: center;
-
-    }
-
-    }
-}
-@media all and (max-width: 830px) {
-    .column {
-        width: 100%;
-        display:flexbox;
-}
-}
